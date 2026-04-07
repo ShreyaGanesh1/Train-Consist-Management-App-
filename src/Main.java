@@ -20,17 +20,11 @@ class GoodsBogie {
 
         try {
             // Rule: Petroleum cannot be assigned to Rectangular bogies
+
             if (shape.equalsIgnoreCase("Rectangular") && cargoType.equalsIgnoreCase("Petroleum")) {
                 throw new CargoSafetyException("Unsafe cargo assignment! Petroleum cannot be in a Rectangular bogie.");
             }
-            git add .
-            git commit -m "UC15: Safe Cargo Assignment Using try-catch-finally"
-            git push origin feature/UC15
 
-            git checkout develop
-            git pull origin develop
-            git merge feature/UC15
-            git push origin develop
             this.currentCargo = cargoType;
             System.out.println("Cargo assigned successfully -> " + cargoType);
 
