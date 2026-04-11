@@ -37,10 +37,15 @@ class GoodsBogie {
                     + shape + " bogie (" + bogieId + ").");
         }
     }
+
+    public String getCurrentCargo() {
+        return currentCargo;
+    }
 }
 
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("=======================================");
         System.out.println("UC15 - Safe Cargo Assignment");
         System.out.println("=======================================");
@@ -52,5 +57,7 @@ public class Main {
 
         GoodsBogie bogie2 = new GoodsBogie("B002", "Rectangular");
         bogie2.assignCargo("Petroleum");
+
+        System.out.println("\nUC15 runtime handling completed...");
     }
 }
