@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class CargoSafetyException extends RuntimeException {
     public CargoSafetyException(String message) {
         super(message);
@@ -45,8 +44,10 @@ class GoodsBogie {
 }
 
 public class Main {
+
     public static void main(String[] args) {
 
+        // ================= UC15 =================
         System.out.println("=======================================");
         System.out.println("UC15 - Safe Cargo Assignment");
         System.out.println("=======================================");
@@ -59,12 +60,9 @@ public class Main {
         GoodsBogie bogie2 = new GoodsBogie("B002", "Rectangular");
         bogie2.assignCargo("Petroleum");
 
-        System.out.println("\nUC15 runtime handling completed...");
-=======
-public class Main {
+        System.out.println("\nUC15 runtime handling completed...\n");
 
-    public static void main(String[] args) {
-
+        // ================= UC16 =================
         int[] capacities = {72, 56, 24, 70, 60};
 
         System.out.println("=========================================");
@@ -100,6 +98,6 @@ public class Main {
         for (int num : arr) {
             System.out.print(num + " ");
         }
->>>>>>> 37472a4 (UC16: Sort Passenger Bogies by Capacity)
+        System.out.println();
     }
 }
